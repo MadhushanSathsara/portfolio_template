@@ -1,0 +1,58 @@
+const projects = [
+  {
+    id: 1,
+    title: "Project One",
+    image: require("../Assets/pro1.jpg"),
+    description: "A modern web application built using React and Bootstrap.A modern web application built using React and Bootstrap.A modern web application built using React and Bootstrap.A modern web application built using React and Bootstrap.A modern web application built using React and Bootstrap.A modern web application built using React and Bootstrap.A modern web application built using React and Bootstrap.A modern web application built using React and Bootstrap.A modern web application built using React and Bootstrap.A modern web application built using React and Bootstrap A modern web application built using React and Bootstrap.",
+    startDate: "2023-01-10",
+    endDate: "2023-03-15",
+    scope: "Developed a responsive frontend for an e-commerce dashboard with authentication and charts.Developed a responsive frontend for an e-commerce dashboard with authentication and charts.",
+  },
+  {
+    id: 2,
+    title: "Project Two",
+    image: require("../Assets/pro2.jpg"),
+    description: "An interactive UI with dynamic features.",
+    startDate: "2023-04-01",
+    endDate: "2023-05-20",
+    scope: "Created a dynamic UI for a real-time chat app using React and Socket.IO.",
+  },
+  {
+    id: 3,
+    title: "Project Three",
+    image: require("../Assets/pro3.jpg"),
+    description: "A fully responsive and optimized website.",
+    startDate: "2023-06-10",
+    endDate: "2023-07-05",
+    scope: "Built a company landing page with animations, SEO, and responsive layouts.",
+  },
+  {
+    id: 4,
+    title: "Project Four",
+    image: require("../Assets/pro4.jpg"),
+    description: "Portfolio website showcasing skills and projects.",
+    startDate: "2023-07-20",
+    endDate: "2023-08-15",
+    scope: "Designed and deployed a personal portfolio with contact form and image galleries.",
+  },
+  {
+    id: 5,
+    title: "Project Five",
+    image: require("../Assets/pro5.jpg"),
+    description: "Booking system for small businesses.",
+    startDate: "2023-09-01",
+    endDate: "2023-10-10",
+    scope: "Implemented backend using PHP and MySQL for appointment scheduling.",
+  },
+  {
+    id: 6,
+    title: "Project Six",
+    image: require("../Assets/pro6.jpg"),
+    description: "Real estate listing web application.",
+    startDate: "2023-10-15",
+    endDate: "2023-12-01",
+    scope: "Developed search filters, map integration, and property management.",
+  },
+];
+
+export default projects;
