@@ -18,7 +18,8 @@
     flex-direction: column;
     align-items: center;  
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
+    margin-right: 50px;
 }
 
 .pro-pic {
@@ -27,7 +28,6 @@
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #fff;
-    margin-left: 25px; 
 }
 
 .text {
@@ -220,6 +220,47 @@
 .bounce-once {
   animation: bounce 1s;
   animation-fill-mode: forwards; 
+}
+@media (max-width: 768px) {
+    .pro-pic {
+        width: 200px;
+        height: 200px;
+        margin-top: 50px;
+        margin-right: 100px; 
+        
+    }
+
+    .home-img {
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        
+    }
+
+    .page {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .home-content {
+        margin-right: 0;
+    }
+
+    .text {
+        font-size: 28px;
+    }
+
+    .text-p {
+        font-size: 16px;
+    }
+    .who-container {
+         display: flex;
+    }
+    .who-text {
+        margin-right: 50px;
+    }
 }
 
 

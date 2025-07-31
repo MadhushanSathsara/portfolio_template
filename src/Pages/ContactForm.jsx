@@ -7,6 +7,7 @@ function ContactForm() {
     email: '',
     message: '',
   });
+  const [submitted, setSubmitted ] = useState (false);
   
 
   const handleChange = (e) => {
@@ -18,7 +19,7 @@ function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Message submitted successfully!');
+    setSubmitted(true);
     setFormData({ name: '', email: '', message: '' });
   };
 
@@ -65,6 +66,10 @@ function ContactForm() {
         <button type="submit" className="btn btn-primary submit-btn">
           Submit
         </button>
+        {submitted && (
+          <div className="success">Message submitted successfully!</div>
+        )}
+        
       </form>
     </div>
   );
