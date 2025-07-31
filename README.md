@@ -1,70 +1,149 @@
-# Getting Started with Create React App
+# 🌐 Personal Portfolio Template
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a responsive and modern personal portfolio template built with **React**, **React Router**, and **Bootstrap**. It's designed for developers, freelancers, or students who want to showcase their work, background, and contact information in a clean and elegant layout.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📸 Live Demo (Optional)
 
-### `npm start`
+> You can host this site using [GitHub Pages](https://create-react-app.dev/docs/deployment/#github-pages), [Netlify](https://www.netlify.com/), or [Vercel](https://vercel.com/).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Features
 
-### `npm test`
+- Clean and responsive UI
+- Smooth scroll navigation
+- Dynamic project routing
+- Animated project overview using Framer Motion
+- Contact form with validation and feedback
+- Modular and customizable codebase
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React.js
+- React Router DOM
+- Bootstrap 5
+- Framer Motion
+- Custom CSS
+- Boxicons
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 💻 Getting Started
 
-### `npm run eject`
+### 1. Clone the repository
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+git clone https://github.com/MadhushanSathsara/portfolio_template.git
+cd portfolio_template
+---
+```
+### 2. Install Dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+---
+```
+### 3. Start the Development Server
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm start
+---
+```
+### 4. Build for Production
+```bash
+npm run build
+---
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📂 Folder Structure
+ ```bash 
+src/
+├── Assets/            # Profile and project images
+├── components/        # Navbar, Footer, Loader, ScrollToTop
+├── pages/             # Home, ContactForm, ProjectOverview
+├── data/              # Static project data file
+├── App.js             # Main routing
+├── index.js           # Entry point
+└── index.css          # Global styles
 
-## Learn More
+---
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📌 Project Overview
+🏠 Home Section
+Welcome message
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Short bio
 
-### Code Splitting
+Call to action
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Profile picture
 
-### Analyzing the Bundle Size
+Social media icons
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+👤 About Section
+Short introduction
 
-### Making a Progressive Web App
+Development expertise
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Skills overview
 
-### Advanced Configuration
+💼 Projects Section
+Project cards with image, title, and description
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Dynamic routing to detailed views
 
-### Deployment
+📄 Project Overview Page
+Detailed view per project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Animated using Framer Motion
 
-### `npm run build` fails to minify
+Description, scope, start/end dates
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+📬 Contact Section
+Contact form with name, email, and message fields
+
+Submission alert for feedback
+
+🔗 Footer
+Personal info
+
+Email & phone
+
+Social media icons
+
+Copyright
+
+✨ Customization Guide
+You can personalize your portfolio by editing the following:
+
+Profile Picture: Replace images in src/Assets/
+
+Project Data: Edit src/data/projectData.js
+
+Text Content: Update text in Home.jsx, Footer.jsx, and other components
+
+Social Links: Modify icons and links in Footer and Home
+
+Styling: Update index.css or component-specific CSS
+
+## 🙋‍♂️ Author
+Madushan Sathsara
+
+💼 Web Developer | Programmer
+
+📧 Email: msathsara839@gmail.com
+
+🔗 GitHub: @MadhushanSathsara
+
+
+
+
+
+
+
+
