@@ -11,3 +11,623 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* Base Styles (for larger screens first - Desktop First Approach) */
+
+.home-img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    padding: 20px;
+    background: url('../Assets/backpic.jpg') no-repeat center center/cover;
+    box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+}
+
+.page {
+    width: 60%;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the start (left) */
+    justify-content: center;
+    padding: 20px;
+}
+
+.pro-pic {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    margin-left: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added a subtle shadow */
+}
+
+.text {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.text-p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.contact {
+    background: linear-gradient(135deg, #00ffff, #0de4da);
+    font-size: 18px;
+    font-weight: bold;
+    color: #202020;
+    height: 45px;
+    width: 140px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /* bottom: 30px; Remove fixed positioning from here */
+    /* right: 30px; Remove fixed positioning from here */
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px; /* Add some space below the text */
+}
+
+.contact:hover {
+    background: linear-gradient(135deg, #0de4da, #00ffff);
+    transform: scale(1.01);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.contact:active {
+    transform: scale(0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically as well */
+    margin-top: 100px;
+}
+
+.profile2-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.who-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    background-color: rgb(206, 206, 206);
+    box-sizing: border-box;
+}
+
+.who-text {
+    flex: 2;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.who-text h1 {
+    font-size: 36px;
+    color: #07d2c8;
+    margin-bottom: 20px;
+}
+
+.who-text h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.who-text p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.project-container {
+    text-align: center;
+    padding: 50px;
+    background: #f8f9fa;
+    background-color: rgb(197, 193, 193);
+    box-sizing: border-box;
+}
+
+.project-container h1 {
+    color: #4b4b4b;
+    font-size: 3rem;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.project-title {
+    margin-top: 30px;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 5px; /* Added border-radius for consistency */
+    overflow: hidden; /* Ensures content respects border-radius */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+}
+
+.project-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+    height: 180px;
+    object-fit: cover;
+    width: 100%; /* Ensure image fills its container */
+    border-radius: 5px 5px 0 0;
+}
+
+.card-body {
+    background: linear-gradient(135deg, #517398, #498057);
+    color: white;
+    padding: 20px;
+}
+
+.card-body button {
+    background-color: white;
+    color: rgb(13, 202, 202);
+    border: none;
+    font-weight: bold;
+    padding: 10px 15px; /* Added padding to buttons */
+    border-radius: 5px; /* Added border-radius to buttons */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card-body button:hover {
+    background-color: rgb(13, 202, 202);
+    color: #f7f7f7;
+}
+
+.social-link {
+    /* Removed absolute/relative positioning for better flow */
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    justify-content: center; /* Center the icons for better mobile display */
+    margin-top: 20px; /* Adjust margin as needed */
+    margin-bottom: 30px; /* Keep this for spacing in footer */
+}
+
+.social-link box-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    fill: #00ffff;
+}
+
+.social-link box-icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+}
+
+/* Navbar specific styles */
+.custom-navbar {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-radius: 0 0 20px 20px;
+    box-sizing: border-box;
+}
+
+.navbar-logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.navbar-logo:hover {
+    color: #2e2e2e;
+    text-decoration: none;
+}
+
+.ms-auto {
+    margin-left: auto !important;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: black !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #08c8e2 !important;
+    border-radius: 15px;
+}
+
+/* Footer specific styles */
+.footer {
+    background-color: #232323;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+
+.footer-about h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-about p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.footer-contact h3,
+.footer-social h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-contact p,
+.footer-contact a {
+    font-size: 14px;
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    color: #68b5e8;
+}
+
+.footer-social .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #68b5e8;
+}
+
+.footer-bottom {
+    padding-top: 15px;
+    font-size: 14px;
+    color: #888;
+}
+
+.dropdown-menu {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.dropdown-item:hover {
+    background-color: #cfe2f0;
+}
+
+.loader-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #202020;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Media Queries */
+
+/* Tablet and smaller devices */
+@media (max-width: 992px) {
+    .custom-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 15px;
+    }
+
+    .ms-auto {
+        margin-left: 0 !important;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-link {
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Home section for tablets */
+    .home-img {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding: 40px 20px; /* Increased padding for better spacing */
+        text-align: center; /* Center content horizontally */
+    }
+
+    .page {
+        width: 90%; /* Adjust width to be a bit less than 100% */
+        margin-left: auto; /* Center the block */
+        margin-right: auto; /* Center the block */
+        text-align: center;
+    }
+
+    .home-content {
+        margin-top: 20px;
+        align-items: center; /* Center content horizontally */
+    }
+
+    .pro-pic {
+        width: 250px; /* Slightly smaller for tablets */
+        height: 250px;
+        margin-left: 0;
+        margin-top: 20px; /* Add some space above the image */
+    }
+
+    .social-link {
+        top: unset; /* Remove fixed positioning */
+        left: unset; /* Remove fixed positioning */
+        margin-top: 30px; /* Add margin to separate from content */
+        justify-content: center; /* Ensure icons are centered */
+    }
+
+    /* Who Am I section for tablets */
+    .who-container {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .profile-pic-container {
+        margin-top: 0;
+    }
+
+    .profile2-pic {
+        width: 200px;
+        height: 200px;
+    }
+
+    .who-text {
+        flex: unset;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    /* Project section for tablets */
+    .project-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project-card {
+        width: 80%; /* Make cards wider for tablets */
+        max-width: 400px; /* Limit max width */
+        margin: 0 auto;
+    }
+
+    .project-container {
+        padding: 40px 20px;
+    }
+
+    .project-container h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    .custom-navbar {
+        padding: 10px;
+    }
+
+    .navbar-logo {
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    /* Home section for mobile */
+    .home-img {
+        padding: 30px 15px;
+    }
+
+    .page {
+        width: 100%; /* Take full width */
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .text {
+        font-size: 28px;
+    }
+
+    .text-p {
+        font-size: 16px;
+    }
+
+    .contact {
+        width: 100%;
+        max-width: 200px;
+        margin: 20px auto 0;
+        display: block;
+    }
+
+    .pro-pic {
+        width: 180px; /* Smaller for mobile */
+        height: 180px;
+    }
+
+    /* Who Am I section for mobile */
+    .who-container {
+        padding: 30px 15px;
+        gap: 20px;
+    }
+
+    .profile2-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    .who-text h1 {
+        font-size: 24px;
+    }
+
+    .who-text h2 {
+        font-size: 18px;
+    }
+
+    .who-text p {
+        font-size: 15px;
+    }
+
+    /* Project section for mobile */
+    .project-container h1 {
+        font-size: 2rem;
+    }
+
+    .project-card {
+        width: 90%; /* Adjust width for smaller screens */
+        max-width: 300px; /* Maintain a max-width */
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    /* Footer for mobile */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-logo {
+        font-size: 1.3rem;
+    }
+
+    .nav-link {
+        font-size: 0.95rem;
+    }
+
+    .footer-about h2,
+    .footer-contact h3,
+    .footer-social h3 {
+        font-size: 16px;
+    }
+
+    .footer-contact p,
+    .footer-contact a,
+    .footer-about p {
+        font-size: 13px;
+    }
+
+    .social-icon {
+        font-size: 20px;
+    }
+
+    .text {
+        font-size: 24px; 
+    }
+
+    .text-p {
+        font-size: 14px;
+    }
+}
