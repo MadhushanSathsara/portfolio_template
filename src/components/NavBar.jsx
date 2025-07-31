@@ -14,11 +14,9 @@ function NavBar() {
 
   const navigateAndScroll = (sectionId) => {
     if (location.pathname === '/') {
-      // Already on home, scroll directly
       const section = document.getElementById(sectionId);
       section?.scrollIntoView({ behavior: 'smooth' });
     } else {
-      // Navigate to home first, then scroll after render
       navigate('/', { state: { scrollTo: sectionId } });
     }
   };
