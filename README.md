@@ -4,12 +4,6 @@ This is a responsive and modern personal portfolio template built with **React**
 
 ---
 
-## 📸 Live Demo (Optional)
-
-> You can host this site using [GitHub Pages](https://create-react-app.dev/docs/deployment/#github-pages), [Netlify](https://www.netlify.com/), or [Vercel](https://vercel.com/).
-
----
-
 ## 🚀 Features
 
 - Clean and responsive UI
