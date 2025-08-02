@@ -28,6 +28,7 @@
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #fff;
+   
 }
 
 .text {
@@ -78,6 +79,7 @@
     display: flex;
     justify-content: center;
     margin-top: 100px;
+   
 }
 
 .profile2-pic {
@@ -87,6 +89,17 @@
     object-fit: cover;
     border: 4px solid #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+   float: left;
+   
+}
+.profile2m-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+   margin-left: 50px;
 }
 
 .who-container {
@@ -188,7 +201,7 @@
     display:flex;
     flex-direction: row;
     gap: 25px;
-    padding: 10px 15px;
+    padding: 10px 0px;
     border-radius: 10px;
 }
 
