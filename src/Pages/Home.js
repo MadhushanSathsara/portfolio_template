@@ -19,7 +19,7 @@ import pro2 from '../../src/Assets/pro2.jpg';
 import pro3 from '../../src/Assets/pro3.jpg';
 import pro4 from '../../src/Assets/pro4.jpg';
 import pro5 from '../../src/Assets/pro5.jpg';
-import pro6 from '../../src/Assets/pro6.jpg';
+// import pro6 from '../../src/Assets/pro6.jpg';
 
 
 function Home() {
@@ -53,11 +53,12 @@ function Home() {
             Let’s build something great together! 🚀
           </p>
           <Link to="/contact" className="contact">Contact Me</Link>
-          <div className='social-link'>
+          
+          {/* <div className='social-link'>
             <box-icon type='logo' name='facebook-circle'></box-icon>
             <box-icon type='logo' name='whatsapp-square'></box-icon>
             <box-icon type='logo' name='instagram-alt'></box-icon>
-          </div>
+          </div> */}
         </div>
          
         <div className="home-content">
@@ -150,7 +151,7 @@ function Home() {
           </Card>
 
         
-          <Card className="project-card">
+          {/* <Card className="project-card">
             <Card.Img variant="top" src={pro6} className="card-img" />
             <Card.Body>
               <Card.Title>Project Three</Card.Title>
@@ -159,7 +160,7 @@ function Home() {
               </Card.Text>
               <Button variant="primary" onClick={() => handleViewProject(6)}>View Project</Button>
             </Card.Body>
-          </Card>
+          </Card> */}
         </div>
       </div>
     </div>

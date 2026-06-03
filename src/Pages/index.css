@@ -2,9 +2,9 @@
     display: flex;
     align-items: center; 
     justify-content: flex-start; 
-    height: 100vh;
+    height: 80vh;
     padding: 20px;
-    background: url('../Assets/backpic.jpg') no-repeat center center/cover;
+    background: url('../Assets/background.png') no-repeat center center/cover;
 }
 
 .page {
@@ -33,12 +33,12 @@
 .text {
     font-size: 36px;
     font-weight: bold;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 20px;
 }
 .text-p {
     font-size: 18px;
-    color: #555;
+    color: #ececec;
     line-height: 1.6;
 }
 .contact {
@@ -108,7 +108,7 @@
 
 .who-text h1 {
     font-size: 36px;
-    color: #07d2c8;
+    color: #0672ff;
     margin-bottom: 20px;
 }
 .who-text h2 {
@@ -166,7 +166,7 @@
 }
 
 .card-body {
-    background: linear-gradient(135deg, #517398, #498057);
+    background: linear-gradient(135deg, #2781e0, #1c8b9e);
     color: white;
     padding: 20px;
 }
